@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+
+
+
+            <Entry 
+                x:Name = "EnterAmount"
+                Placeholder="Enter Text" />
+
+            <Label
+                x:Name="TipLabel"
+                Text="Tip"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Label
+                x:Name="TipValue"
+                Text="0.00"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                x:Name="Totallabel"
+                Text="Total"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Label
+                x:Name="TotalValue"
+                Text="0.00"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Label
+                x:Name="TipLabelpercnt"
+                Text="Tip Percetage"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Label
+                x:Name="tipValuepercnt"
+                Text="15%"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+
+            <Slider 
+                x:Name = "SliderTipoParcent"
+                Minimum="0"
+                Maximum="100" />
+
+            <Button
+                x:Name="fifitenbtn"
+                Text="15%" 
+                SemanticProperties.Hint="coisa 1"
+                HorizontalOptions="Fill"
+                Clicked="Onfifitenbtn_Clicked"
+                />
+
+            <Button
+                x:Name="twentbtn"
+                Text="20%" 
+                SemanticProperties.Hint="Cois2"
+                HorizontalOptions="Fill" 
+                Clicked="Ontwentbtn_Clicked"/>
+
+            <Button
+                x:Name="rdbtn"
+                Text="Round Down" 
+                SemanticProperties.Hint="Coisa3"
+                HorizontalOptions="Fill" 
+                Clicked="Onrdbtn_Clicked"/>
+
+            <Button
+                x:Name="rpbtn"
+                Text="Round UP" 
+                SemanticProperties.Hint="coisa5"
+                HorizontalOptions="Fill" 
+                Clicked="Onrpbtn_Clicked"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
