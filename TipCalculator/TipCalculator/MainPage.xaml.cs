@@ -11,19 +11,24 @@
 
         private void Onfifitenbtn_Clicked(object sender, EventArgs e)
         {
-
-
+            SliderTipoParcent.Value = 15;
 
         }
 
         private void Ontwentbtn_Clicked(object sender, EventArgs e)
         {
-
+            SliderTipoParcent.Value = 20;
         }
 
         private void Onrdbtn_Clicked(object sender, EventArgs e)
         {
+            double result = CalculeteTip();
+            double roundedResult = Math.Floor(result);
+            double amount = Convert.ToDouble(EnterAmount.Text.ToString());
+            double totalValue = roundedResult + amount;
 
+            TipValue.Text = roundedResult.ToString("C2");
+            Totallabel.Text = totalValue.ToString("C2");
 
         }
 
@@ -37,8 +42,6 @@
             TipValue.Text = roundResult.ToString();
             Totallabel.Text = totalvalue.ToString();
 
-
-
         }
 
         private double CalculeteTip()
@@ -49,11 +52,7 @@
 
 
             double result = amound * (parcent / 100);
-            return
-                result;
-
-
-
+            return result;
 
         }
     }
